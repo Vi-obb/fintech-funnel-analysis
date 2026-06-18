@@ -1,0 +1,6 @@
+acquisition_channel,users_count,deposit_users,transaction_users,activated_14d_users,deposit_rate_pct,transaction_rate_pct,activation_14d_rate_pct,total_deposit_volume,total_transaction_volume,avg_deposit_amount_per_depositor,avg_transaction_volume_per_transacting_user,estimated_revenue_30d,incentive_cost,net_profit_30d,net_profit_per_user
+referral,1707,864,719,702,50.62,42.12,41.12,36428.54,59250.53,42.16,82.41,1491.16,19452.0,-17960.84,-10.52
+paid_search,2170,942,764,754,43.41,35.21,34.75,37570.04,53628.34,39.88,70.19,759.03,4480.0,-3720.97,-1.71
+organic,2814,1027,820,811,36.5,29.14,28.82,42463.16,63840.37,41.35,77.85,242.1,2256.0,-2013.9,-0.72
+affiliate,778,210,149,145,26.99,19.15,18.64,8343.04,8973.0,39.73,60.22,258.08,3780.0,-3521.92,-4.53
+paid_social,2531,653,468,458,25.8,18.49,18.1,26757.38,24412.37,40.98,52.16,887.04,11312.0,-10424.96,-4.12
