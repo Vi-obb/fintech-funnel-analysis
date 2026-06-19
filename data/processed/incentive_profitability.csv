@@ -1,0 +1,6 @@
+incentive_type,incentivized_users,activated_14d_users,activation_14d_rate_pct,total_incentive_cost,estimated_revenue_30d,net_profit_30d,net_profit_per_incentivized_user,revenue_to_cost_ratio,incentive_cost_per_activated_user
+all_incentives,4591,1510,32.89,41280.0,3637.41,-37642.59,-8.2,0.088,27.34
+cashback,896,360,40.18,4480.0,759.03,-3720.97,-4.15,0.169,12.44
+welcome_bonus,1696,383,22.58,13568.0,1129.14,-12438.86,-7.33,0.083,35.43
+affiliate_reward,378,92,24.34,3780.0,258.08,-3521.92,-9.32,0.068,41.09
+referral_bonus,1621,675,41.64,19452.0,1491.16,-17960.84,-11.08,0.077,28.82
