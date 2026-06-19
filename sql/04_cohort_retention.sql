@@ -3,7 +3,7 @@ WITH user_cohorts AS (
         user_id,
         signup_date,
 
-        -- Monday-based signup week approximation.
+        -- Cohort label: Monday of the user's signup week.
         date(
             signup_date,
             '-' || ((CAST(strftime('%w', signup_date) AS INTEGER) + 6) % 7) || ' days'
@@ -23,18 +23,21 @@ user_transaction_weeks AS (
     SELECT
         uc.user_id,
         uc.signup_week,
+
+        -- Retention week: measured relative to the user's own signup date.
         CAST(
             (
-                julianday(te.transaction_date) - julianday(uc.signup_week)
+                julianday(te.transaction_date) - julianday(uc.signup_date)
             ) / 7 AS INTEGER
         ) AS week_number
+
     FROM user_cohorts uc
     INNER JOIN transaction_events te
         ON uc.user_id = te.user_id
     WHERE
         CAST(
             (
-                julianday(te.transaction_date) - julianday(uc.signup_week)
+                julianday(te.transaction_date) - julianday(uc.signup_date)
             ) / 7 AS INTEGER
         ) BETWEEN 0 AND 4
 ),
